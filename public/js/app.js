@@ -1,5 +1,4 @@
 window.onload = () => {
-
   let btnGetWeather = $('#btn-get-weather');
   let weather = $('#weather');
   let wind = $('#wind');
@@ -46,7 +45,8 @@ window.onload = () => {
       view3.addClass('d-none');
     };
 
-    let showViewWeatherWeek = () => { debugger;
+    let showViewWeatherWeek = () => {
+ debugger;
       view1.addClass('d-none');
       view2.addClass('d-none');
       view2.removeClass('d-block');
@@ -86,10 +86,10 @@ window.onload = () => {
       let proxy = 'https://cors-anywhere.herokuapp.com/';
       let apiLink = `https://api.darksky.net/forecast/0262438812257f35f3a075cf970b60da/${latitude},${longitude}?lang=es&units=si`;
       $.ajax({
-        url:  proxy + apiLink,
+        url: proxy + apiLink,
       }) 
-      .done(showWeather)
-      .fail(handleError)
+        .done(showWeather)
+        .fail(handleError);
     };
 
     let backPage = () => {
@@ -103,7 +103,6 @@ window.onload = () => {
     btnGetWeather.on('click', getWeather);
     btnGetWeatherWeek.on('click', showViewWeatherWeek);
     btnBack.on('click', backPage);
-     
   } else {
     alert('We have a problem finding your location');    
   }
