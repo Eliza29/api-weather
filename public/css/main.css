@@ -1,8 +1,17 @@
 .height-100 {
   height: 100vh;
 }
+<<<<<<< HEAD
 
 /* .image-background{
   background-image: url('../assets/images/beach1.jpg');
   color: white;
 } */
+=======
+.image-background{
+  background-image: url("https://source.unsplash.com/collection//1744241/my-first-collection/");
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+>>>>>>> fc36054bc0a5b74a7c63f9a982b281ef82283fec
