@@ -46,7 +46,7 @@ window.onload = () => {
       view3.addClass('d-none');
     };
 
-    let showViewWeatherWeek = () => {
+    let showViewWeatherWeek = () => { debugger;
       view1.addClass('d-none');
       view2.addClass('d-none');
       view2.removeClass('d-block');
@@ -54,8 +54,17 @@ window.onload = () => {
       view3.removeClass('d-none');
     };
 
+
+    let createView3 = (arr) => {
+      arr.forEach((element, index) => {
+        let idElement = `span#${index + 1}`;
+        $(idElement).text(element.apparentTemperatureMax);
+      });
+    };
+
     let showWeather = (data) => {
       console.log(data);
+      debugger;
       let currently = data.currently;
       let daily = data.daily;
       weather.text(currently.apparentTemperature);
@@ -63,27 +72,22 @@ window.onload = () => {
       summary.text(currently.summary);
       humidity.text(currently.humidity);
       pressure.text(currently.pressure);
-      view3.html('');
-      daily.data.forEach(element => {
-        let text = $('p.day');
-        text.text(element.apparentTemperatureMax);
-        view3.append(text);
-      });
+      let arrDaily = daily.data;
       showViewWeather();
-      showViewWeatherWeek();
+      createView3(arrDaily);
     }; 
 
     let handleError = () => {
       console.log('Se ha presentado un error al obtener el clima');
     };
 
-    let getWeather = (event) => {
+    let getWeather = (event) => { 
       event.preventDefault();
       let proxy = 'https://cors-anywhere.herokuapp.com/';
       let apiLink = `https://api.darksky.net/forecast/0262438812257f35f3a075cf970b60da/${latitude},${longitude}?lang=es&units=si`;
       $.ajax({
         url:  proxy + apiLink,
-      })
+      }) 
       .done(showWeather)
       .fail(handleError)
     };
