@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>EDWeather</title>
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <div class="container-fluid">
+    <div class="row height-100 justify-content-center align-items-center">
+      <div class="col-11 col-md-6 d-block" id="view-1">
+        <h2 class="text-center my-3">Bienvenido a
+          <span>Weather</span>, descubre como estará el clima en tu ciudad</h2>
+        <div class="row justify-content-center">
+          <button type="button" class="btn btn-success" id="btn-get-weather">Obtener el clima</button>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 d-none" id="view-2">
+        <figure>
+          <img src="" class="img-fluid">
+        </figure>
+        <h3 id="weather" class="text-center"></h3>
+        <p class="text-center">Clima:
+          <span id="summary"></span>
+        </p>
+        <p class="text-center">Viento:
+          <span id="wind"></span>
+        </p>
+        <p class="text-center">Humedad:
+          <span id="humidity"></span>
+        </p>
+        <p class="text-center">Presión:
+          <span id="pressure"></span>
+        </p>
+        <div class="row justify-content-center">
+          <button type="button" class="btn btn-success my-3" id="btn-weather-week">Pronóstico de la semana</button>
+        </div>
+      </div>
+
+      <div class="col-11 col-md-6 d-none" id="view-3">
+        <p id="1"></p>
+        <p id="2"></p>
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+        <p id="6"></p>
+        <p id="7"></p>
+        <p id="8"></p>        
+        <div class="row">
+          <button type="button" class="btn btn-success my-3" id="btn-back">Regresar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

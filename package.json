@@ -1,0 +1,23 @@
+{
+  "name": "api-weather",
+  "version": "1.0.0",
+  "description": "aplicación para visualizar el clima",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danielalab/api-weather.git"
+  },
+  "author": "Daniela y Elizabeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielalab/api-weather/issues"
+  },
+  "homepage": "https://github.com/Danielalab/api-weather#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
