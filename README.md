@@ -1,6 +1,34 @@
-# WEATHER
+# DARK SKY WEATHER
 
-> Recuerda seguir siempre esta [guía de estilos](https://github.com/Laboratoria/js-style-guide/)
+INTRODUCCION  
+Para la realización del proyecto se uso las Apis de Dark Sky y de Unplash, la primera ofrece datos actualizados del pronostico del clima de acuerdo a la ubicación del usuario, la segunda proporciona una colleccion de imagenes.
 
-¿Has visto que los sistemas operativos móviles vienen con una APP de predicción del clima? ¡Vamos a hacer la nuestra! Para ello, usaremos la API de Dark Sky y esperemos llegues a usar un API de imágenes como Flickr, Unsplash u otro. A continuación te dejamos unos slides con algunos recursos y guías del flujo de la app. Recuerda que no es necesario que sigas el diseño al pie de la letra, eres completamente libre de adaptarlo a tus gustos.
+HERRAMIENTAS  
+Las tecnologías que se usaron para crear nuestra web son:
+- HTML 5
+- CSS 3
+- JQuery
+- ECMASCRIPT 6
+- API DARK Sky
+- Bootstrap 4
+
+CONTENIDO  
+La web creada nos proporciona los datos del clima del día y lugar actual y tambien el pronostico del tiempo de los proximo 7 días.
+
+
+Desarrolladoras: 
+- Elizabeth Segura
+- Daniela Gonzales
+
+
+
+
+
+
+  
+
+
+
+
+
 
