@@ -2,6 +2,8 @@
   height: 100vh;
 }
 .image-background{
-  background-image: url('../assets/images/beach1.jpg');
+  background-image: url("https://source.unsplash.com/random");
   color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
