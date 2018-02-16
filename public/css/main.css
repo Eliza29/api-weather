@@ -12,5 +12,10 @@
   width: 60%;
   border-radius:3px;
   border:1px solid white;
-  background-color:rgba(0, 0, 0, 0.479); 
+  background-color:rgba(0, 0, 0, 0.514); 
+  padding: 25px;
+}
+.icon-weather{
+  width: 125px;
+  height: 125px;
 }
