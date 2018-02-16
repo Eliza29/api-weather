@@ -91,6 +91,9 @@ function initMap() {
       summary.text(currently.summary);
       humidity.text(currently.humidity);
       pressure.text(currently.pressure);
+      icons.attr('src', 'assets/images/' + currently.icon + '.png');
+      // icons.text(currently.icon);
+
       let arrDaily = daily.data;
       showViewWeather();
       createView3(arrDaily);
