@@ -19,6 +19,7 @@ let view1 = $('#view-1');
 let view2 = $('#view-2');
 let view3 = $('#view-3');
 let monday2 = $('#8');
+let icons = $('#icons');
 
 let latitude;
 let longitude;
@@ -87,6 +88,7 @@ function initMap() {
       let currently = data.currently;
       let daily = data.daily;
       weather.text(currently.apparentTemperature);
+      icons.text(currently.icon);
       wind.text(currently.windSpeed);
       summary.text(currently.summary);
       humidity.text(currently.humidity);
