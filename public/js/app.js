@@ -18,6 +18,8 @@ window.onload = () => {
   let view2 = $('#view-2');
   let view3 = $('#view-3');
   let monday2 = $('#8');  
+  
+  let icons = $('#icons');
 
   if (navigator.geolocation) {
     let latitude;
@@ -69,6 +71,7 @@ window.onload = () => {
       let daily = data.daily;
       weather.text(currently.apparentTemperature);
       wind.text(currently.windSpeed);
+      icons.text(currently.icon);
       summary.text(currently.summary);
       humidity.text(currently.humidity);
       pressure.text(currently.pressure);
