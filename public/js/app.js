@@ -46,7 +46,7 @@ window.onload = () => {
     };
 
     let showViewWeatherWeek = () => {
- debugger;
+
       view1.addClass('d-none');
       view2.addClass('d-none');
       view2.removeClass('d-block');
@@ -64,7 +64,7 @@ window.onload = () => {
 
     let showWeather = (data) => {
       console.log(data);
-      debugger;
+     
       let currently = data.currently;
       let daily = data.daily;
       weather.text(currently.apparentTemperature);
