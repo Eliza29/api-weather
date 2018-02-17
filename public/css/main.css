@@ -17,7 +17,7 @@
 }
 
 .height-80 {
-  height: 80vh;
+  height: 65vh;
 }
 
 .icon-weather{
@@ -27,4 +27,7 @@
 .icons-weather{
   margin-left: 24%;
   width: 170px;
+}
+.search-weather{
+  margin-bottom: 41px;
 }

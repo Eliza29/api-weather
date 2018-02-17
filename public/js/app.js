@@ -1,5 +1,6 @@
 var mapObj = document.getElementById('map');
 
+let inputSearch = $('#input-search');
 let btnGetWeather = $('#btn-get-weather');
 let weather = $('#weather');
 let wind = $('#wind');
@@ -63,8 +64,11 @@ function initMap() {
       view2.addClass('d-block');
       view2.removeClass('d-none');
       view3.addClass('d-none');
+      inputSearch.addClass('d-block');
+      inputSearch.removeClass('d-none');
       mapObj.classList.add('d-block');
       mapObj.classList.remove('d-none');
+      
     };
 
     let showViewWeatherWeek = () => {
