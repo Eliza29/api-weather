@@ -1,6 +1,7 @@
 var mapObj = document.getElementById('map');
 
-let inputSearch = $('#input-search');
+
+let boxSearch = $('#box-search');
 let btnGetWeather = $('#btn-get-weather');
 let weather = $('#weather');
 let wind = $('#wind');
@@ -24,6 +25,7 @@ let icons = $('#icons');
 
 let latitude;
 let longitude;
+let inputSearch = document.getElementById('input-search');
 
 function initMap() {
   let directionsService = new google.maps.DirectionsService;
@@ -55,7 +57,10 @@ function initMap() {
     };
 
     navigator.geolocation.getCurrentPosition(success, error);
-
+    let autocompleteInputs = () => {
+      new google.maps.places.Autocomplete(inputSearch);
+    };
+    autocompleteInputs();
     // funcionalidad para obtener la información del clima 
 
     let showViewWeather = () => {
@@ -64,8 +69,8 @@ function initMap() {
       view2.addClass('d-block');
       view2.removeClass('d-none');
       view3.addClass('d-none');
-      inputSearch.addClass('d-block');
-      inputSearch.removeClass('d-none');
+      boxSearch.addClass('d-block');
+      boxSearch.removeClass('d-none');
       mapObj.classList.add('d-block');
       mapObj.classList.remove('d-none');
       

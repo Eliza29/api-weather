@@ -22,8 +22,8 @@
         </div>
       </div>
       <div class="col-12 col-md-7">
-        <div class="col-10 col-md-12 d-none search-weather" id = "input-search">
-            <input class="form-control" type="text" placeholder="Ingresa una ubicación">
+        <div class="col-10 col-md-12 d-none search-weather" id = "box-search">
+            <input class="form-control" type="text" id="input-search" placeholder="Ingresa una ubicación">
         </div> 
        <div class=" d-none height-80 mx-3" id="map">
         </div>
@@ -66,7 +66,7 @@
     </div>
   </div>
 
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVy9sxy4dToErPKrImIhj5wRStDXAVK44&callback=initMap">
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVy9sxy4dToErPKrImIhj5wRStDXAVK44&callback=initMap&libraries=places">
   </script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
