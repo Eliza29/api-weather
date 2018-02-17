@@ -21,10 +21,17 @@
           <button type="button" class="btn btn-success" id="btn-get-weather">Obtener el clima</button>
         </div>
       </div>
-      <div class="col-12 col-md-7">
-        <div class="col-10 col-md-12 d-none search-weather" id = "box-search">
-            <input class="form-control" type="text" id="input-search" placeholder="Ingresa una ubicación">
-        </div> 
+      <div class="col-12 col-md-8">
+        <form class="d-none" id = "box-search">
+          <div class="form-row">
+            <div class="col-6 col-md-8 mx-sm-3 search-weather">
+              <input class="form-control" type="text" id="input-search" placeholder="Ingresa una ubicación">
+            </div>
+            <div class="col-3 col-md-2">
+              <button type="button" class="btn btn-success mb-2">Ver ubicación</button>
+            </div>
+          </div>
+        </form>
        <div class=" d-none height-80 mx-3" id="map">
         </div>
       </div>
