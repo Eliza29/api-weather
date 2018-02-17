@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>EDWeather</title>
 </head>
@@ -21,8 +22,10 @@
           <button type="button" class="btn btn-success" id="btn-get-weather">Obtener el clima</button>
         </div>
       </div>
-      <div class="col-12 col-md-8">
+      
+      <div class="col-12 col-md-7">
         <form class="d-none" id = "box-search">
+          <h2 class="ml-3"> Sky Weather</h2>
           <div class="form-row">
             <div class="col-6 col-md-8 mx-sm-3 search-weather">
               <input class="form-control" type="text" id="input-search" placeholder="Ingresa una ubicación">
@@ -53,11 +56,12 @@
           <span id="pressure"></span>
         </p>
         <div class="row justify-content-center">
-          <button type="button" class="btn btn-success my-3" id="btn-weather-week">Pronóstico de la semana</button>
+          <button type="button" class="btn btn-success my-3" id="btn-weather-week">Ver pronóstico de la semana</button>
         </div>
       </div>
 
       <div class="col-11 col-md-4 d-none text-center" id="view-3">
+        <h4>Pronóstico de la Semana</h4>
         <p><b>Monday</b> <span id="1"></span></p>
         <p><b>Tuesday</b> <span id="2"></span></p>
         <p><b>Wednesday</b> <span id="3"></span></p>

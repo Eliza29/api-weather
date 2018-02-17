@@ -1,3 +1,6 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
 .height-100 {
   height: 100vh;
 }
@@ -17,7 +20,7 @@
 }
 
 .height-80 {
-  height: 65vh;
+  height: 60vh;
 }
 
 .icon-weather{
@@ -29,5 +32,5 @@
   width: 170px;
 }
 .search-weather{
-  margin-bottom: 41px;
+  margin-bottom: 3%;
 }
