@@ -42,12 +42,14 @@ function initMap() {
         center: googlePos,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
+      var image = 'assets/images/markerblue.png';
       var googleMap = new google.maps.Map(mapObj, mapOptions);
       var markerOpt = {
         map: googleMap,
         position: googlePos,
         title: 'Hi , I am here',
-        animation: google.maps.Animation.DROP
+        animation: google.maps.Animation.DROP,
+        icon: image
       };
       var googleMarker = new google.maps.Marker(markerOpt);
     };
