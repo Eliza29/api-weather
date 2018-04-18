@@ -42,7 +42,7 @@ function initMap() {
         center: googlePos,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
-      var image = 'assets/images/markerblue.png';
+      var image = 'public/assets/images/markerblue.png';
       var googleMap = new google.maps.Map(mapObj, mapOptions);
       var markerOpt = {
         map: googleMap,
@@ -59,10 +59,7 @@ function initMap() {
     };
 
     navigator.geolocation.getCurrentPosition(success, error);
-    let autocompleteInputs = () => {
-      new google.maps.places.Autocomplete(inputSearch);
-    };
-    autocompleteInputs();
+   
     // funcionalidad para obtener la información del clima 
 
     let showViewWeather = () => {
@@ -104,7 +101,7 @@ function initMap() {
       summary.text(currently.summary);
       humidity.text(currently.humidity);
       pressure.text(currently.pressure);
-      icons.attr('src', 'assets/images/' + currently.icon + '.png');
+      icons.attr('src', 'public/assets/images/' + currently.icon + '.png');
       // icons.text(currently.icon);
 
       let arrDaily = daily.data;
